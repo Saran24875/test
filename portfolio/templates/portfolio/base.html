@@ -1,0 +1,25 @@
+L{# Load the static files #}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+        <p>&copy; 2025 Developer Portfolio</p>
+    </footer>
+</body>
+</html>

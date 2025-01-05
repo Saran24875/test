@@ -1,0 +1,9 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+<section>
+    <h1>{{ project.title }}</h1>
+    <img src="{{ project.image.url }}" alt="{{ project.title }}">
+    <p>{{ project.description }}</p>
+    <a href="{{ project.link }}">Visit Project</a>
+</section>
+{% endblock %}
